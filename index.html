@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>像素冒险：金币突围</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hud-panel top-bar">
+        <div>
+          <h1>像素冒险：金币突围</h1>
+          <p>融合马里奥跳跃节奏与横版闯关推进的高难度生存冒险。</p>
+        </div>
+        <div class="controls">
+          <span>A / D：移动</span>
+          <span>W / Space：跳跃</span>
+          <span>J：攻击</span>
+          <span>K：冲刺闪避</span>
+          <span>Enter：商店确认</span>
+        </div>
+      </header>
+
+      <main class="layout">
+        <section class="game-panel hud-panel">
+          <canvas id="game" width="960" height="540" aria-label="横版像素闯关游戏"></canvas>
+          <div class="stats-grid" id="stats"></div>
+        </section>
+
+        <aside class="side-panel hud-panel">
+          <section>
+            <h2>玩法目标</h2>
+            <ul>
+              <li>击败怪物或躲开它们，收集金币并抵达终点。</li>
+              <li>每关结束后进入商店，购买武器强化与被动增益。</li>
+              <li>关卡会显著变难：怪物更多、更快、更耐打。</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>商店说明</h2>
+            <div id="shop"></div>
+          </section>
+
+          <section>
+            <h2>事件日志</h2>
+            <div id="log" class="log"></div>
+          </section>
+        </aside>
+      </main>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
